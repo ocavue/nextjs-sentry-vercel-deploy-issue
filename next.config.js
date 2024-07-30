@@ -64,7 +64,13 @@ module.exports = withSentryConfig(moduleExports, {
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true,
 
-  sourcemaps: {
-    deleteSourcemapsAfterUpload: true,
+  // sourcemaps: {
+  //   deleteSourcemapsAfterUpload: true,
+  // },
+
+  unstable_sentryWebpackPluginOptions: {
+    sourcemaps: {
+      filesToDeleteAfterUpload: '.next/static/**/*.map'
+    },
   },
 });
