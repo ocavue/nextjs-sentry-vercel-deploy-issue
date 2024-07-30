@@ -39,3 +39,6 @@ yarn-error.log*
 next.config.original.js
 sentry.properties
 
+
+# Sentry Config File
+.env.sentry-build-plugin
