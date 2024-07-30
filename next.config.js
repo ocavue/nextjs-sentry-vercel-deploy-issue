@@ -65,6 +65,6 @@ module.exports = withSentryConfig(moduleExports, {
   automaticVercelMonitors: true,
 
   sourcemaps: {
-    deleteSourcemapsAfterUpload: true,
+    deleteSourcemapsAfterUpload: false,
   },
 });
